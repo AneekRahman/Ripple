@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ripple</string>
+
+    <string name="aneek_dp_url">https://scontent.fdac19-1.fna.fbcdn.net/v/t31.0-8/25358434_396600167435976_5957471861929151263_o.jpg?_nc_cat=0&amp;oh=31f98a7be5f7710ea3ef2a3cc5806533&amp;oe=5BC95543</string>
+
+    <string name="anotherDpUrl">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sSufNGxvyi2kaT2HvqnXNTNkf8iBqM3HgS2gsl6U53E5wBHaHQ</string>
+
+    <string name="gif_url">https://media.giphy.com/media/11tTNkNy1SdXGg/giphy.gif</string>
+
+    <string name="example_desc">Hey guys :D This is meh official account! Follow me to get more updates on my miserable life. Micheal, vsause here. Lets investigate. Yeah bruvss Hey guys :D This is meh official</string>
+
+</resources>

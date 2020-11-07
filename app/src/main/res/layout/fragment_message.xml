@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/message_swipe_refresh_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/message_main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:clipToPadding="false">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Search messages"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/msg_search_icon"
+                    android:background="@drawable/msg_search_bar_shadow"
+                    android:drawablePadding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_write_round_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Unopened"
+                    android:textColor="@color/btnIconColor"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/msg_unopened_msgs_icon"
+                    android:drawablePadding="4dp"
+                    android:background="@drawable/profile_follow_btn_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Requests"
+                    android:textColor="@color/btnIconColor"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/msg_requests_icon"
+                    android:drawablePadding="4dp"
+                    android:background="@drawable/profile_follow_btn_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/message_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        
+    </android.support.v4.widget.NestedScrollView>
+    
+</android.support.v4.widget.SwipeRefreshLayout>

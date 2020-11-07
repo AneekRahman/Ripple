@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/comment_row_dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/post_user_border_bg"
+            android:padding="2dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/comment_row_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aneek Rahman"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/comment_row_replied_to_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gibson Ligma"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:background="@drawable/comment_replied_bg"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="1dp"
+                    android:drawableLeft="@drawable/ic_reply_icon_white"
+                    android:drawablePadding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/comment_row_main_comment_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aise polapain hysssseeeee"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_interaction_button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/regular_post_heart_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_heart_filled_black" />
+
+        <TextView
+            android:id="@+id/regular_post_heart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.5k"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/regular_post_comment_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_reply_icon_black"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/regular_post_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4k"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4k"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

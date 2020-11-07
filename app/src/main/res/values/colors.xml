@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#FAFAFA</color>
+    <color name="colorAccent">#ff0044</color>
+
+    <color name="default_bg_color">#f2f2f2</color>
+    <color name="navBarColor">#FAFAFA</color>
+    <color name="navIconColor">#b6282828</color>
+
+    <color name="btnIconColor">#b6282828</color>
+</resources>
